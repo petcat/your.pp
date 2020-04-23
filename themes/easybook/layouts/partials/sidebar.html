@@ -1,0 +1,41 @@
+<div class="col-box col-box-author">
+    <img class="avatar" src="/{{ .Site.Params.avatar }}" alt="{{ .Site.Params.author }}">
+    <div class="col-box-title name">{{ .Site.Params.author }}</div>
+    <p>{{ .Site.Params.whoami }}</p>
+    <p class="contact">
+        {{- range $name, $path := .Site.Params.social }}
+        {{- if $path }}
+        <a href="{{ $path | safeURL }}">{{ title $name }}</a>
+        {{- end }}
+        {{- end }}
+    </p>
+</div>
+<!--<div class="col-box">
+    <div class="col-box-title">Link</div>
+    <ul class="post-list">
+        {{ range first 15 .Site.RegularPages }}
+        <li>
+            <a href="{{ .Permalink }}" class="post-link">{{ title .Title }}</a>
+            <li><a href="" class="post-link"></a></li>
+        </li>
+        {{ end }}
+    </ul>
+</div>-->
+<div class="col-box">
+    <div class="col-box-title">Link</div>
+    <ul class="post-list">
+        <li><a href="https://nic.ua/en/domains" class="post-link">pp.ua 免费域名申请入口</a></li>
+        <li><a href="https://apu.drs.ua/en/" class="post-link">pp.ua 免费域名激活入口</a></li>
+        <li><a href="https://nic.eu.org/arf/en/contact/create/" class="post-link">eu.org 免费域名申请入口</a></li>
+        <li><a href="https://www.freenom.com/zh/index.html" class="post-link">freenom 免费域名</a></li>
+        <li><a href="https://www.name.com/zh-cn/referral/9d09" class="post-link">name.com 送你$5注册域名</a></li>
+        <li><a href="http://www.dynadot.com?s6127cY64kgO" class="post-link">dynadot.com 送你$5注册域名</a></li>
+        <li><a href="https://affiliate.namecheap.com/?affId=9727" class="post-link">namecheap.com</a></li>
+        <li><a href="https://www.namesilo.com/register.php?rid=d1cc828dp" class="post-link">namesilo.com</a></li>                
+    </ul>
+</div>
+<div class="col-box post-toc hide">
+    <div class="col-box-title">TOC</div>
+</div>
+
+<!--<div><div class='domcomp_widget' refcode='5d27804410000043e56d4d27'></div><script async="" src='https://www.domcomp.com/assets/javascripts/widget/widget.js'></script></div>-->
