@@ -1,0 +1,78 @@
+# https://themes.gohugo.io/hugo-theme-easybook/
+# https://github.com/Y4er/hugo-theme-easybook.git
+baseURL = "https://your.pp.ua/"
+languageCode = "zh-cn"
+title = "pp.ua eu.org .tk .ml .ga .cf .gq js.org .free免费域名申请教程 | Your.pp.ua 你的免费域名"
+theme = "easybook"
+
+pygmentsCodefences = true
+pygmentsUseClasses = true
+pygmentsCodefencesGuessSyntax = true
+
+paginate = 9              # 首页每页显示的文章数
+googleAnalytics = ""      # UA-XXXXXXXX-X
+# 右上角菜单
+[[menu.main]]
+  name = "Home"
+  weight = 10
+  url = "/"
+[[menu.main]]
+  name = "Category"
+  weight = 20
+  url = "/post/"
+[[menu.main]]
+  name = "About"
+  weight = 30
+  url = "/about"
+
+# site info
+[params]
+  author = "Your.pp.ua"
+  whoami = "你的免费域名申请."
+  avatar = "images/avatar.jpg"
+  keywords = ["pp.ua","eu.org",".tk",".ml",".ga",".cf",".gq","js.org",".free","Freenom","免费域名","免费域名申请"]
+  description = "pp.ua, eu.org, .tk, .ml, .ga, .cf, .gq, js.org, .free 等等免费域名申请教程"
+
+  [params.social]
+    Telegram = "https://t.me/sqlite3"
+    #Email = "https://live.com"
+  [params.utterances]       # https://utteranc.es/
+    owner = ""          # Your GitHub ID
+    repo = ""       # The repo to store comments
+  [params.gitment]          # Gitment is a comment system based on GitHub issues. see https://github.com/imsun/gitment
+    owner = ""              # Your GitHub ID
+    repo = ""               # The repo to store comments
+    clientId = ""           # Your client ID
+    clientSecret = ""       # Your client secret
+  [params.gitalk]           # Gitalk is a comment system based on GitHub issues. see https://github.com/gitalk/gitalk
+    owner = ""              # Your GitHub ID
+    repo = ""               # The repo to store comments
+    clientId = ""           # Your client ID
+    clientSecret = ""       # Your client secret
+  # Valine.
+  # You can get your appid and appkey from https://leancloud.cn
+  # more info please open https://valine.js.org
+  [params.valine]
+    enable = false
+    appId = 'appId'
+    appKey = 'appKey'
+    notify = false          # mail notifier , https://github.com/xCss/Valine/wiki
+    verify = false          # Verification code
+    avatar = 'mm'
+    placeholder = '说点什么吧...'
+    visitor = false
+  
+  changyanAppid = ""        # Changyan app id             # 畅言
+  changyanAppkey = ""       # Changyan app key
+
+  livereUID = ""            # LiveRe UID                  # 来必力
+  
+  baiduPush = true          # baidu push                  # 百度
+  baiduAnalytics = ""       # Baidu Analytics
+  baiduVerification = ""    # Baidu Verification
+  googleVerification = ""   # Google Verification         # 谷歌
+
+  # Link custom CSS and JS assets
+  #   (relative to /static/css and /static/js respectively)
+  customCSS = []
+  customJS = []
